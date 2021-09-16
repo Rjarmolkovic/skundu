@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Bendra Skundu Knyga</title>
+    <style type="text/css">
+      html{
+        font-size: 10px;
+      }
+      body{
+        font-family: Condensed;
+      }
+form{
+  max-width: 600px;
+  text-align: center;
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  padding: 30px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size:3rem;
+  text-align:center;
+}
+
+p {
+  font-size:3rem;
+  text-aling:center;
+  widht: 20px;
+
+}
+
+input{
+  font-size: 2rem;
+  text-align:center;
+}
+textarea,
+button {
+  display:block;
+  width: 400px;
+  margin: 5px auto;
+  border: none;
+  padding:5px;
+  text-align: left;
+}
+
+button{
+  width: 30%;
+  font-size: 20px
+  font-weight: bold;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  text-align:center;
+}
+
+label {
+  font-size:3rem;
+  text-align:center;
+}
+
+select{
+  font-size: 2rem;
+  widht: 200px;
+  text-align:center;
+}
+    </style>
+  </head>
+  <body>
+    <form  action="namu darbai.html" method="get">
+      <h1>Skundu Knyga</h1>
+      <input type="name" name="name" placeholder="Vardas" value="">
+        <input type="surname" name="surname" placeholder="Pavarde" value="">
+          <input type="email" name="email" placeholder="El.pastas" value="">
+          <input type="tel" id="phone" name="phone" placeholder="Telefono Nr" pattern="{9}">
+
+          <label for="Apsilankymo laikas"><strong>Apsilankymo laikas:</strong></label>
+          <input type="datetime-local" id="Apsilankymo laikas" name="Apsilankymo laikas">
+
+    <p><strong>Parduotuves Pasirinkimas:</strong></p>
+    <select name="Parduotuves pasirinkimas" id="Parduotuves pasirinkimas">
+        <option value disabled selected>----</option>
+        <option value="Maxima">Maxima</option>
+        <option value="Iki">Iki</option>
+        <option value="Akropolis">Akropolis</option>
+        <option value="Rimi">Rimi</option>
+        <option value="Norfa">Norfa</option>
+    </select>
+
+  <p><strong>Nusiskundimo tipas:</strong></p>
+  <input type="radio" id="Bloga Preke" name="Nusiskundimo tipas" value="Bloga Preke">
+  <label for="Bloga Preke">Bloga Preke</label><br><br>
+  <input type="radio" id="Sugadinta Preke" name="Nusiskundimo tipas" value="Sugadinta Preke">
+  <label for="Sugadinta Preke">Sugadinta Preke</label><br><br>
+  <input type="radio" id="Preke Netiko" name="Nusiskundimo tipas" value="Preke Netiko">
+  <label for="Preke Netiko">Preke Netiko</label><br><br>
+  <input type="radio" id="Brokas" name="Nusiskundimo tipas" value="Brokas">
+  <label for="Brokas">Brokas</label><br><br>
+
+  <p><strong>Pridekite Prekes Nuotrauka:</strong></p>
+  <label for="myfile"><i>Prideti Nuotrauka</i></label>
+  <input type="file" id="myfile" name="myfile">
+
+          <textarea name="more" rows="8" placeholder="Prekes aprasymo vieta"></textarea>
+
+          <label for="Sutikimas su privatumo politika"><strong>Sutinku su privatumo politika</strong></label><br>
+          <input type="checkbox" id="Sutikimas su privatumo politika" name="Sutikimas su privatumo politika" value="Sutikimas su privatumo politika" required>
+          <button type="submit" name="button">Siusti</button>
+
+    </form>
+  </body>
+</html>
